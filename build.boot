@@ -22,4 +22,6 @@
    (serve :port 8888)
    (watch)
    (reload :on-jsload 'hello.core/init)
-   (cljs)))
+   (cljs :compiler-options
+         {:closure-defines {'hello.core/github-credentials
+                            (-> "config.edn" slurp read-string)}})))

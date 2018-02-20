@@ -1,0 +1,4 @@
+;; Create a GitHub personal access token and place it here with your user
+;; name and re-name this file to 'config.edn'
+{:github-user "youruser"
+ :github-token "yourtoken"}
