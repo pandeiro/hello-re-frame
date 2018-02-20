@@ -1,0 +1,2 @@
+{:compiler-options {:preloads [devtools.preload]}
+ :init-fns [hello.core/init]}
