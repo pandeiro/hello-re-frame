@@ -14,3 +14,7 @@
   (-> url
     (string/replace #"blob/" "")
     (string/replace #"github\.com" "cdn.rawgit.com")))
+
+(defn sanitize-url [url]
+  (string/replace url #"[.:/]+" "_"))
+

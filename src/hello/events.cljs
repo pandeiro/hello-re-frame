@@ -22,7 +22,7 @@
  :submit-search
  interceptors
  (fn [{:keys [db]} [_ query]]
-   {:db db
+   {:db (assoc-in db [:data :results] nil)
     :dispatch [:fetch-search query]}))
 
 (rf/reg-event-fx
@@ -78,3 +78,4 @@
                 (rf/dispatch [ev {:body % :metadata metadata}])))
        (.catch #(doseq [ev error]
                  (rf/dispatch [ev {:error % :metadata metadata}])))))))
+

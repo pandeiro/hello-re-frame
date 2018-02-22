@@ -9,7 +9,7 @@ UI framework.
 (The following sections correspond to git tags that can be visited to observe the state
 of the app under development at that time.)
 
-## 01 - Beginnings
+## [01 - Beginnings](https://github.com/pandeiro/hello-re-frame/tree/01-beginnings)
 
 At this point, our app is set up with just the beginnings of what we want:
 
@@ -18,7 +18,7 @@ At this point, our app is set up with just the beginnings of what we want:
 - A React-based ClojureScript app that simply renders "Hello World" is defined in `src/hello/core.cljs`
 - Some development niceties are present: changes to source code reload automatically (boot-reload), the page is served over HTTP (boot-http), and ClojureScript data structures can be logged to the browser's dev console (cljs-devtools)
 
-## 02 - Basic Search
+## [02 - Basic Search](https://github.com/pandeiro/hello-re-frame/tree/02-basic-search)
 
 The first prototype of the app:
 
@@ -33,7 +33,7 @@ state is managed via top-level vars that hold configuration
 information and two reagent atoms that store form state and search
 results.
 
-## 03 - Refactor using re-frame
+## [03 - Refactor using re-frame](https://github.com/pandeiro/hello-re-frame/tree/03-refactor-using-re-frame)
 
 A re-thinking of how to organize the app into its structural components:
 
@@ -50,3 +50,13 @@ explicitly initialized at app init.
 
 Presentation logic has been split into `src/hello/views.cljs`, and
 accesses the app's state via subscriptions in `src/hello/subs.cljs`.
+
+## [04 - Add polish](https://github.com/pandeiro/hello-re-frame/tree/04-add-polish)
+
+Finally, to improve our user experience, we'll add a few niceties:
+
+- Visual formatting
+- Source code highlighting
+
+Styles are split out into their own module in `src/hello/styles.cljs`, where
+they can be mixed in and re-used.

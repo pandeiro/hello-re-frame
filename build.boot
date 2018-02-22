@@ -6,6 +6,7 @@
    [adzerk/boot-cljs "2.1.4"]
    [adzerk/boot-reload "0.5.2"]
    [binaryage/devtools "0.9.9"]
+   [cljsjs/highlight "9.12.0-1"]
    [org.clojure/clojure "1.9.0"]
    [org.clojure/clojurescript "1.9.946"]
    [pandeiro/boot-http "0.8.3"]
